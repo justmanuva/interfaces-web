@@ -142,15 +142,18 @@ html {
 }
 .content__box--redondo{
   border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  -ms-border-radius: 100px;
-  -o-border-radius: 100px;
   /* padding: 20px; */
   /* overflow: hidden; */
 }
 .content__box--sombra{
   box-shadow: 5px 5px 10px gray inset;
+}
+.content__box--3d{
+  box-shadow: 14px 14px 20px 0 gray;
+}
+
+.content__box--shadowMultiple{
+  box-shadow: -1px -1px 5px 0 rgb(122,221,);
 }
 
 /* Cajas libres y cajas fijas */
