@@ -1,0 +1,64 @@
+/* Reseteo estilos */
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+  /* float: left; */
+  border: 1px solid black;
+}
+.container__layout{
+  /* float: left; */
+  display: flex;
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: auto;
+  height: 700px;
+  /* align-items: center; */
+  border: 1px solid black;
+}
+.layout__box{
+  /* float: left; */
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid gray;
+  margin: 10px;
+
+  flex-grow: 1;
+  min-width: 25%;
+}
+.clearfix{
+  float: none;
+  clear: both;
+}
+.layout__box--red{
+  background-color: red;
+  color: white;
+  flex-grow: 20;
+}
+.layout__box--yellow{
+  background-color: yellow;
+  color: white;
+}
+.layout__box--green{
+  background-color: green;
+  color: white;
+}
+.layout__box--orange{
+  background-color: orange;
+  color: white;
+}
+.layout__box--pink{
+  background-color: pink;
+  color: white;
+}
+.layout__box--blue{
+  background-color: blue;
+  color: white;
+}
