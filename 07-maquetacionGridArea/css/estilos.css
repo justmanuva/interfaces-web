@@ -53,6 +53,12 @@ body{
     grid-template-columns: repeat(10, 1fr);
     list-style: none;
 }
+.list__item a {
+    /* Para quitar la barrita del enlace */
+    text-decoration: none;
+    color:white;
+    font-size: 18px;
+}
 
 .website__content {
     grid-area: contenido;
@@ -67,7 +73,15 @@ body{
     border: 1px solid darkorange;
     color: white;
 }
+.website__sidebar {
+    grid-area: lateral;
+    background-color: salmon;
+    color: white;
+}
 
 .website__footer {
     grid-area: footer;
+    background-color: black;
+    color: white;
+    align-content: center;
 }
