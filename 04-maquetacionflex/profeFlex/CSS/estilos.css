@@ -58,10 +58,6 @@
     letter-spacing: 1px; 
     padding: 15px;
     transition: all 500ms;
-    -webkit-transition: all 500ms;
-    -moz-transition: all 500ms;
-    -ms-transition: all 500ms;
-    -o-transition: all 500ms;
 }
 .menu__list a:hover{
     background-color: #ccc;
@@ -101,10 +97,6 @@
     font-size: 16px;
     color: black;
     transition: all 500ms;
-    -webkit-transition: all 500ms;
-    -moz-transition: all 500ms;
-    -ms-transition: all 500ms;
-    -o-transition: all 500ms;
 }
 .project__project-info a:hover{
     color: green;
@@ -113,10 +105,6 @@
     font-size: 16px;
     color: gray;
     transition: all 500ms;
-    -webkit-transition: all 500ms;
-    -moz-transition: all 500ms;
-    -ms-transition: all 500ms;
-    -o-transition: all 500ms;
 }
 
 /* barra lateral */
@@ -154,19 +142,11 @@
     text-align: center;
     text-transform: uppercase;
     transition: all 1s;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
 }
 .lateral__item a:hover{
     background-color: #444;
     color: white;
     border-radius: 10%;
-    -webkit-border-radius: 10%;
-    -moz-border-radius: 10%;
-    -ms-border-radius: 10%;
-    -o-border-radius: 10%;
 }
 /* Footer */
 .container__footer{
@@ -207,20 +187,77 @@
 }
 
 /* Responsivo */
-@media (max-width: 1390px){
-
+@media (max-width: 1220px){
+    .header__logo{
+        flex-basis: 50%;
+    }
+    .header__menu{
+        flex-basis: 45%;
+    }
 }
-@media (max-width: 1250px){
-
+@media (max-width: 970px){
+    .header__logo{
+        flex-basis: 40%;
+    }
+    .header__menu{
+        flex-basis: 55%;
+    }
 }
-@media (max-width: 1200px){
-
-}
-
-@media (max-width: 800px){
-
+@media (max-width: 845px){
+    .header__logo{
+        text-align: center;
+        flex-basis: 1000%
+    }
+    .menu__list{
+        align-items: flex-start;
+        margin: 20px;
+        margin-top: 10px;
+    }
+    .container__content{
+        display: flex;
+        flex-flow: column;
+    }
+    .content__projects{
+        flex-basis: 100%;
+        margin-left: 20px;
+    }
+    .content__lateral{
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-right: 0px;
+    }
+    .lateral__list {
+        display: flex;
+        flex-flow: row;
+        flex-basis: 100%;
+        justify-content: space-between;
+    }
+    .lateral__item {
+        width: 100%;
+        margin: 10px;
+    }
 }
 /* Vista móvil */
-@media (max-width: 625px){
-
+@media (max-width: 670px){
+    .container__footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-center;
+        align-items: center;
+    }
+    .footer__logoFooter{
+        flex-grow: 1;
+        flex-basis: 100%;
+    }
+    .footer__logoFooter{
+        order: 1;
+        text-align: right;
+        margin-right: 0px;
+    }
+    .footer__info{
+        flex-grow: 1;
+        order: 2;
+        margin-left: 0px;
+    }
 }
