@@ -548,7 +548,8 @@ No es necesario flotar los elementos (ni con float, flex, grid, grid-areas */
 /* Estilos para la sección de Proyectos */
 .layout__projects{
     /* position y z-index */
-
+    position: relative;
+    z-index: 1;
     background-color: var(--color-bg-projects);
     padding: 14rem 10rem;
 
@@ -560,12 +561,16 @@ No es necesario flotar los elementos (ni con float, flex, grid, grid-areas */
 .projects__header{
     margin-bottom: 4rem;
 }
+.project__title:hover {
+    color:#2522BA;
+}
 .projects__subtitle{
     text-transform: capitalize;
 }
 .projects__categories{
     /* Flex */
-
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 3fr;
     gap: 7rem;
     margin-bottom: 5.5rem;
 }
@@ -576,17 +581,51 @@ No es necesario flotar los elementos (ni con float, flex, grid, grid-areas */
     font-weight: 500;
     cursor: pointer;
     padding: 0.8rem 0;
-    /* efecto */ 
 
+    position: relative;
+    line-height: 6rem;
+    font-weight: 500;
+    color: var(--color-text-body);
+    /* efecto */ 
+    transition: all 300ms ease-in-out;
+}
+.categories__item::before {
+    content:"";
+    position: absolute;
+    height: 0.2rem;
+    background-color: var(--color-primary);
+    bottom: 1.2rem;
+    left: 0;
+    width: 0%;
+    opacity: 0;
+    transition: all 350ms linear;
+}
+.nav__title:hover::before {
+    width: 100%;
+    opacity: 1;
 }
 
 .projects__all{
     /* flex */
-
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 4rem 7rem;
 }
 .projects__project{
-    width: calc(50% - 3.5rem); /* consigo que mis tarjetas tengan un tamaño variable. Facilita el responsive */
+    /* consigo que mis tarjetas tengan un tamaño variable. Facilita el responsive */
+    /* width: calc(50% - 3.5rem); */
+
+}
+.projects__project-shapes {
+    position: relative;
+}
+.project-shapes__item {
+    position: absolute;
+    z-index: -1;
+}
+.shapes__item {
+    transition: all infinite ease-in-out;
+    animation: infinite;
 }
 .project__container-img{
     width: 100%;
@@ -596,7 +635,10 @@ No es necesario flotar los elementos (ni con float, flex, grid, grid-areas */
 .project__img{
     width:100%;
     /* efecto */
-
+    transition: all 2s ease-in-out;
+}
+.projects__project:hover.project__img {
+    transform: scale(1.2);
 }
 
 .project__content{
