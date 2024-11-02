@@ -569,7 +569,8 @@ No es necesario flotar los elementos (ni con float, flex, grid, grid-areas */
 }
 .projects__categories{
     /* Flex */
-
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 3fr;
     gap: 7rem;
     margin-bottom: 5.5rem;
 }
@@ -583,14 +584,21 @@ No es necesario flotar los elementos (ni con float, flex, grid, grid-areas */
     /* efecto */ 
 
 }
+.categories__item:hover{
+    /* Efecto */
+    color: var(--color-primary);
+    transform: scale(1.1);
+}
 
 .projects__all{
     /* flex */
-
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 4rem 7rem;
 }
 .projects__project{
-    width: calc(50% - 3.5rem); /* consigo que mis tarjetas tengan un tamaño variable. Facilita el responsive */
+     /* consigo que mis tarjetas tengan un tamaño variable. Facilita el responsive */
+    /* width: calc(50% - 3.5rem); */
 }
 .project__container-img{
     width: 100%;
@@ -600,7 +608,7 @@ No es necesario flotar los elementos (ni con float, flex, grid, grid-areas */
 .project__img{
     width:100%;
     /* efecto */
-
+    /* Que se haga grande lentamente */
 }
 
 .project__content{
@@ -615,6 +623,10 @@ No es necesario flotar los elementos (ni con float, flex, grid, grid-areas */
     color: var(--color-title);
     margin-bottom: 1rem;
     /* efecto */
+}
+.project__title:hover{
+    /* efecto */
+    color: var(--color-primary);
 }
 
 .project__tags{
@@ -673,7 +685,8 @@ No es necesario flotar los elementos (ni con float, flex, grid, grid-areas */
 }
 .stats__progress{
     /* Flex */
-    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
 }
 .stats__stat{
