@@ -112,7 +112,11 @@ body{
 }
 
 /* efecto hover en Logo */
-
+.header__logo:hover {
+    background-color: var(--color-backgroung);
+    color: black;
+    border-radius: 2px;
+}
 
 .header__logo .logo__gear{
     display: block;
@@ -120,51 +124,82 @@ body{
     font-size: 30px;
     margin-top: 4px;
     margin-left: 26px;
-
     /* A la hora de crear animación */
-
+    animation: giraRueda 4s infinite linear;
 }
 
 /* animación logo rueda */
-
+@keyframes giraRueda {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
 
 /* efecto de desaparece y vuelve keyframes */
-
+.header__logo:hover .logo__gear {
+    animation: desdeAbajo 1s linear;
+}
+@keyframes desdeAbajo {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        /*Desaparece*/
+        transform: translateY(200%) rotate(360deg);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
 
 .header__menu{
     float: right;
     height: 70px;
     background: transparent;
 }
-.menu__list li{
+.list__item {
     font-size: 24px;
     display: inline-block; /* puedo flotar con el float o bien mediante inline-block. Funcionaría igual */
     margin: 0px 20px 0px 20px;
     letter-spacing: 1px;
     line-height: 70px;
 }
-.menu__list li a{
+.list__item a {
     display:block;
     color: var(--color-text-white);
     text-decoration: none;
     /* transición */
+    transition: all 500ms;
 }
 /* hover */
-
+.list__item a:hover {
+    color: var(--color-primary);
+    transform: scale(1.2);
+}
 /* Maquetando el Banner */
 .content__banner{
     width: 95.5%;
     height: 100px;
     border: 10px solid var(--color-text-white);
     box-shadow: 0px 0px 2px var(--color-gray);
-    background: url("../img/bakbaner.png");
+    background: url("../img/backbanner.png");
     background-position: -200px -200px;
     margin: 20px auto;
     overflow: hidden;
     /* animación */
+    animation: backBanner 10s linear infinite;
+}
+/* keyframes */
+@keyframes backBanner {
+    from {
+        background-position: 0px 0px;
+    } to {
+        background-position: -200px -200px;
+    }
 }
 
-/* keyframes */
 
 .content__banner h1{
     display: block;
@@ -176,10 +211,23 @@ body{
     text-shadow: 2px 2px 1px var(--color-bg);
     margin: 10px auto;
     /* animación */
+    animation: mueveTexto 10s linear infinite;
 }
-
 /* keyframes */
+@keyframes mueveTexto {
+    0% {
+        transform: translateX(200%);
+    }
+    25% {
 
+    }
+    75% {
+
+    }
+    100% {
+
+    }
+}
 /* Tarjetas */
 .cards__card{
     float: left;
