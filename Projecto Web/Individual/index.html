@@ -2,11 +2,9 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <!-- user_scalable = no - es para que el usuario no pueda realizar zoom con los 2 dedos. -->
     <meta name="viewport" content="width=device-width, user-scalable=no"> 
-    <title>Proyecto Web</title>
-    <link rel="shortcut icon" href="img/supertux.png" type="image/x-icon">
+    <title>SAMAS home</title>
+    <link rel="shortcut icon" href="./img/web-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/reset_estilos.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -15,229 +13,306 @@
     <!-- Inicio Cabecera -->
     <header class="header">
         <div class="header__wrap">
-            <div class="header__logo"> 
-                <span class="logo__gear">S</span>
-                <h3>BLOG</h3>
+            <div class="header__logo">
+                <h3>SAMAS home</h3>
             </div>
+            <form class="header__search">
+                <input type="text" placeholder="Buscar SAMAS.com">
+                <input type="button" value="L" class="search__icon">
+            </form>
             <nav class="header__menu">
                 <ul class="menu__list">
                     <li><a href="#">INICIO</a></li>
-                    <li><a href="#">BLOG</a></li>
-                    <li><a href="#">FORMACIÓN</a></li>
-                    <li><a href="#">CONTACTO</a></li>
+                    <li><a href="#">COMPARADOR</a></li>
+                    <li><a href="#">MAQUETA</a></li>
+                    <img src="./img/usuario.png" alt="Perfil">
                 </ul>
             </nav>
         </div>
-        
     </header>
-    <!-- fin de la Cabecera -->
+    <!-- Fin de la Cabecera -->
     
     <main class="content__wrap">
         <section class="content__info">
             <!-- Inicio Banner -->
             <div class="content__banner">
-                <h1>Diseño de CSS por Alumn@</h1>
+                <h1>Ofertas flash</h1>
             </div>
-            <!-- fin de Banner -->
+            <!-- Fin de Banner -->
+
             <!-- Inicio Tarjetas -->
             <div class="content__cards">
                 <div class="cards__card">
-                    <p class="card__icon">H</p>
-                    <h2 class="card__category">Desarrollo Web</h2>
-                    <p class="card__description">
-                        Aprende los principales lenguajes para desarrollar webs. !Conviértete en Web Master!
-                    </p>
+                    <img class="card__icon" src="./img/mesa-marron.jpg">
+                    <p class="card__name">Mesa de madera</p>
+                    <p class="card__prize">133,95€</p>
+                    <del class="card__prizeBefore">165,95€</del>
                 </div>
                 <div class="cards__card">
-                    <p class="card__icon">_</p>
-                    <h2 class="card__category">Sistemas Operativos</h2>
-                    <p class="card__description">
-                        Aprende a administrar sistemas operativos linux y windows.
-                    </p>
+                    <img class="card__icon" src="./img/silla-oscura.jpg">
+                    <p class="card__name">Silla de tela oscura</p>
+                    <p class="card__prize">39,99€</p>
+                    <del class="card__prizeBefore">49,99€</del>
                 </div>
                 <div class="cards__card">
-                    <p class="card__icon">S</p>
-                    <h2 class="card__category">Hardware</h2>
-                    <p class="card__description">
-                        Conoce los entresijos del hardware.
-                    </p>
+                    <img class="card__icon" src="./img/lampara.jpg">
+                    <p class="card__name">Lámpara</p>
+                    <p class="card__prize">19,99€</p>
+                    <del class="card__prizeBefore">24,99€</del>
                 </div>
                 <div class="cards__card">
-                    <p class="card__icon">u</p>
-                    <h2 class="card__category">Redes e Internet</h2>
-                    <p class="card__description">
-                        Aprende a configurar y administrar redes informáticas y servidores.
-                    </p>
+                    <img class="card__icon" src="./img/sillon-concha.jpg">
+                    <p class="card__name">Sillón en concha</p>
+                    <p class="card__prize">40,50€</p>
+                    <del class="card__prizeBefore">55,50€</del>
                 </div>
                 <div class="cards__card">
-                    <p class="card__icon">a</p>
-                    <h2 class="card__category">Bases de Datos</h2>
-                    <p class="card__description">
-                        Aprende a instalar y administrar bases de datos.
-                    </p>
+                    <img class="card__icon" src="./img/sillón-blanco.jpeg">
+                    <p class="card__name">Sillón bajo</p>
+                    <p class="card__prize">99,99€</p>
+                    <del class="card__prizeBefore">129,99€</del>
+                </div>
+                <div class="cards__card">
+                    <img class="card__icon" src="./img/silla-azul.jpg">
+                    <p class="card__name">Silla de terciopelo</p>
+                    <p class="card__prize">45,25€</p>
+                    <del class="card__prizeBefore">70,10€</del>
+                </div>
+                <div class="cards__card">
+                    <img class="card__icon" src="./img/sofa-gris.jpg">
+                    <p class="card__name">Sofá acolchado</p>
+                    <p class="card__prize">499,99€</p>
+                    <del class="card__prizeBefore">579,99€</del>
+                </div>
+                <div class="cards__card">
+                    <img class="card__icon" src="./img/tumbona-gris.jpg">
+                    <p class="card__name">Tumbona de exterior</p>
+                    <p class="card__prize">99,45€</p>
+                    <del class="card__prizeBefore">109,99€</del>
                 </div>
             </div>
-            <!-- fin de Tarjetas -->
+            <!-- Fin de Tarjetas -->
         </section>
-        <!-- Inicio de Barra Lateral -->
-        <div class="clearfix"></div>
-        <aside class="content__lateral">
-            <h3 class="lateral__title">BUSCAR</h3>
-            <div class="lateral__search">
-                <form>
-                    <input type="text">
-                    <input type="button" value="L" class="search__icon">
-                </form>
-            </div>
-            <h3 class="lateral__title">LOGIN</h3>
-            <div class="lateral__login aside-box">
-                <form>
-                    <label class="lateral-box__user aside-box__icon">U</label>
-                    <input type="email">
-                    <label class="lateral-box__password aside-box__icon">w</label>
-                    <input type="password">
-                    <input type="submit" value="Entrar">
-                    <input type="reset" value="Limpiar">
-                    <a href="#">Regístrate aquí</a>
-                    <a href="#">Has olvidado tu contraseña?</a>
-                </form>
-            </div>
-            <h3 class="lateral__title">REDES SOCIALES</h3>
-            <div class="lateral__social aside-box">
-                <div class="social__twitter">
-                    <a href="#" class="social__icon">t</a>
-                    <p class="social__overlay">
-                        Twitter
-                    </p>
+
+        <div class="content__articles__lateral">
+            <!-- Inicio de los Artículos -->
+            <section class="content__articles">
+                <h2 class="articles__title">Productos destacados</h2>
+                <article class="articles__article">
+                    <img class="article__icon" src="./img/sofa-beige-grande.jpg" alt="Sofa beige grande">
+                    <div class="article__titles">
+                        <h4 class="titles__name">
+                            <a href="#">Sofá beige</a>
+                        </h4>
+                        <p class="titles__description">Sofá de tejido ergonómico de tres plazas.</p>
+                    </div>
+                    <p class="article__prize">588,85€</p>
+                    <div class="article__info">
+                        <a href="#">(233)</a>
+                        <img src="./img/estrellas.png" alt="Estrellas">
+                    </div>
+                    <div class="article__clasificacion">
+                        <span>Sofás</span>
+                    </div>
+                </article>
+                <article class="articles__article">
+                    <img class="article__icon" src="./img/armario-madera.jpg" alt="Armario madera">
+                    <div class="article__titles">
+                        <h4 class="titles__name">
+                            <a href="#">Armario madera</a>
+                        </h4>
+                        <p class="titles__description">Armario de dos puertas de madera pulida.</p>
+                    </div>
+                    <p class="article__prize">253,75€</p>
+                    <div class="article__info">
+                        <a href="#">(156)</a>
+                        <img src="./img/estrellas.png" alt="Estrellas">
+                    </div>
+                    <div class="article__clasificacion">
+                        <span>Armarios</span>
+                    </div>
+                </article>
+                <article class="articles__article">
+                    <img class="article__icon" src="./img/mesa-redonda-pequeña.jpg" alt="Mesa redonda pequeña">
+                    <div class="article__titles">
+                        <h4 class="titles__name">
+                            <a href="#">Mesa redonda</a>
+                        </h4>
+                        <p class="titles__description">Mesa de madera suave redonda, tamaño pequeño.</p>
+                    </div>
+                    <p class="article__prize">46,25€</p>
+                    <div class="article__info">
+                        <a href="#">(301)</a>
+                        <img src="./img/estrellas.png" alt="Estrellas">
+                    </div>
+                    <div class="article__clasificacion">
+                        <span>Mesas</span>
+                    </div>
+                </article>
+                <article class="articles__article">
+                    <img class="article__icon" src="./img/sillon-gris-simple.jpg" alt="Sillón gris simple">
+                    <div class="article__titles">
+                        <h4 class="titles__name">
+                            <a href="#">Sillón gris</a>
+                        </h4>
+                        <p class="titles__description">Sillón gris de tejido flexible fijo.</p>
+                    </div>
+                    <p class="article__prize">75,95€</p>
+                    <div class="article__info">
+                        <a href="#">(407)</a>
+                        <img src="./img/estrellas.png" alt="Estrellas">
+                    </div>
+                    <div class="article__clasificacion">
+                        <span>Sillones</span>
+                    </div>
+                </article>
+                <article class="articles__article">
+                    <img class="article__icon" src="./img/sillon-relax-confort.jpg" alt="Sillón relax confort">
+                    <div class="article__titles">
+                        <h4 class="titles__name">
+                            <a href="#">Sillón inclinable</a>
+                        </h4>
+                        <p class="titles__description">Sillón negro inclinable con mando a distancia incluido.</p>
+                    </div>
+                    <p class="article__prize">350,50€</p>
+                    <div class="article__info">
+                        <a href="#">(723)</a>
+                        <img src="./img/estrellas.png" alt="Estrellas">
+                    </div>
+                    <div class="article__clasificacion">
+                        <span>Sillones</span>
+                    </div>
+                </article>
+            </section>
+            <!-- Fin de los Artículos -->
+
+            <!-- Inicio de Barra Lateral -->
+            <aside class="content__lateral">
+                <h3 class="lateral__title lateral__title-login"><b>Iniciar sesión</b></h3>
+                <div class="lateral__login aside-box">
+                    <form>
+                        <label class="lateral-box__user aside-box__icon">U</label>
+                        <input type="email">
+                        <label class="lateral-box__password aside-box__icon">w</label>
+                        <input type="password">
+                        <input type="submit" value="Entrar">
+                        <a href="#">Registrarse</a>
+                        <a href="#">He olvidado mi contraseña</a>
+                    </form>
                 </div>
-                <div class="social__facebook">
-                    <a href="#" class="social__icon">f</a>
-                    <p class="social__overlay">
-                        Facebook
-                    </p>
+                <h3 class="lateral__title lateral__title-members"><b>Nuestro equipo</b></h3>
+                <div class="lateral__members aside-box">
+                    <div class="members__member">
+                        <img class="member__icon" src="./img/member_1.jpg">
+                        <div class="member__text">
+                            <p class="text__name"><b>Manuel Vidal</b></p>
+                            <p class="text__role">CEO</p>
+                        </div>
+                    </div>
+                    <div class="members__member">
+                        <img class="member__icon" src="./img/member_2.jpg">
+                        <div class="member__text">
+                            <p class="text__name"><b>Samuel Trujillo</b></p>
+                            <p class="text__role">Líder de proyecto</p>
+                        </div>
+                    </div>
+                    <div class="members__member">
+                        <img class="member__icon" src="./img/member_3.jpg">
+                        <div class="member__text">
+                            <p class="text__name"><b>Alejandro Vila</b></p>
+                            <p class="text__role">Director de ecologísmo</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="social__youtube">
-                    <a href="#" class="social__icon">y</a>
-                    <p class="social__overlay">
-                        Youtube
-                    </p>
-                </div>
-            </div>
-            <h3 class="lateral__title">PATROCINADORES</h3>
-            <div class="lateral__sponsors aside-box">
-            </div>
-        </aside>
-        <!-- fin de Aside -->
-        <!-- Inicio de los Artículos -->
-        <section class="content__articles">
-            <h2 class="articles__title">Últimos artículos</h2>
-            <div class="clearfix"></div>
-            <article class="articles__article">
-                <div class="article__datos">
-                    <span>Fecha: 01 de enero</span>
-                    <span>Categoría: Pruebas</span>
-                </div>
-                <h4 class="article__subtitle">
-                    <a href="#">Título de artículo 1</a>
-                </h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, dolores. Consequatur quis tenetur, modi quod quam repellat facilis minus molestias dicta eum ex voluptatibus itaque necessitatibus, possimus quas? Fugiat, veritatis!</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, dolores. Consequatur quis tenetur, modi quod quam repellat facilis minus molestias dicta eum ex voluptatibus itaque necessitatibus, possimus quas? Fugiat, veritatis!</p>
-            </article>
-            <article class="articles__article">
-                <div class="article__datos">
-                    <span>Fecha: 01 de febrero</span>
-                    <span>Categoría: Pruebas</span>
-                </div>
-                <h4 class="article__subtitle">
-                    <a href="#">Título de artículo 2</a>
-                </h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, dolores. Consequatur quis tenetur, modi quod quam repellat facilis minus molestias dicta eum ex voluptatibus itaque necessitatibus, possimus quas? Fugiat, veritatis!</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, dolores. Consequatur quis tenetur, modi quod quam repellat facilis minus molestias dicta eum ex voluptatibus itaque necessitatibus, possimus quas? Fugiat, veritatis!</p>
-            </article>
-            <article class="articles__article">
-                <div class="article__datos">
-                    <span>Fecha: 01 de marzo</span>
-                    <span>Categoría: Pruebas</span>
-                </div>
-                <h4 class="article__subtitle">
-                    <a href="#">Título de artículo 3</a>
-                </h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, dolores. Consequatur quis tenetur, modi quod quam repellat facilis minus molestias dicta eum ex voluptatibus itaque necessitatibus, possimus quas? Fugiat, veritatis!</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, dolores. Consequatur quis tenetur, modi quod quam repellat facilis minus molestias dicta eum ex voluptatibus itaque necessitatibus, possimus quas? Fugiat, veritatis!</p>
-            </article>
-            <article class="articles__article">
-                <div class="article__datos">
-                    <span>Fecha: 01 de abril</span>
-                    <span>Categoría: Pruebas</span>
-                </div>
-                <h4 class="article__subtitle">
-                    <a href="#">Título de artículo 4</a>
-                </h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, dolores. Consequatur quis tenetur, modi quod quam repellat facilis minus molestias dicta eum ex voluptatibus itaque necessitatibus, possimus quas? Fugiat, veritatis!</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, dolores. Consequatur quis tenetur, modi quod quam repellat facilis minus molestias dicta eum ex voluptatibus itaque necessitatibus, possimus quas? Fugiat, veritatis!</p>
-            </article>
-            <article class="articles__article">
-                <div class="article__datos">
-                    <span>Fecha: 01 de agosto</span>
-                    <span>Categoría: Pruebas</span>
-                </div>
-                <h4 class="article__subtitle">
-                    <a href="#">Título de artículo 5</a>
-                </h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, dolores. Consequatur quis tenetur, modi quod quam repellat facilis minus molestias dicta eum ex voluptatibus itaque necessitatibus, possimus quas? Fugiat, veritatis!</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, dolores. Consequatur quis tenetur, modi quod quam repellat facilis minus molestias dicta eum ex voluptatibus itaque necessitatibus, possimus quas? Fugiat, veritatis!</p>
-            </article>
-            <article class="articles__blog">
-                <a href="#">Ir al Blog</a>
-            </article>
-        </section>
-        <!-- fin de los Artículos -->
+            </aside>
+            <!-- Fin de Aside -->
+        </div>
+        
     </main>
-    <div class="clearfix"></div>
+
     <!-- Inicio de Pié de Página -->
     <footer class="content__footer">
         <div class="footer__wrap">
-            <div class="footer__menuFooter">
-                <h5 class="footer__title">MENÚ</h5>
-                <ul class="footer__list">
-                    <li><a href="#">INICIO</a></li>
-                    <li><a href="#">BLOG</a></li>
-                    <li><a href="#">FORMACIÓN</a></li>
-                    <li><a href="#">CONTACTO</a></li>
+            <div class="footer__menu">
+                <p class="menu__title"><b>Contáctanos</b></p>
+                <ul class="footer__menu__list">
+                    <li class="list__element">
+                        <a href="#">Contacto y Ayuda</a>
+                    </li>
+                    <li class="list__element">
+                        <a href="#">Devoluciones y Garantías</a>
+                    </li>
+                    <li class="list__element">
+                        <a href="#">Trabaja con nosotros</a>
+                    </li>
+                    <li class="list__element">
+                        <a href="#">Política de Cookies</a>
+                    </li>
                 </ul>
             </div>
-            <div class="footer__location">
-                <h5 class="footer__title">DÓNDE ESTAMOS?</h5>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3199.2996623515555!2d-4.462811723546774!3d36.69133637227841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f9c45623d2c3%3A0x7a634bd28c0cf953!2sMEDAC%20Nova%20%F0%9F%A5%87%20Centro%20Tecnol%C3%B3gico%20de%20FP!5e0!3m2!1ses!2ses!4v1698701252334!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="footer__menu">
+                <p class="menu__title"><b>Compra</b></p>
+                <ul class="footer__menu__list">
+                    <li class="list__element">
+                        <a href="#">Métodos de pago</a>
+                    </li>
+                    <li class="list__element">
+                        <a href="#">Gastos de envío</a>
+                    </li>
+                    <li class="list__element">
+                        <a href="#">Preguntas frecuentes</a>
+                    </li>
+                    <li class="list__element">
+                        <a href="#">Tarjetas de regalo</a>
+                    </li>
+                    <li class="list__element">
+                        <a href="#">Cupones de descuento</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__menu">
+                <p class="menu__title"><b>Market place</b></p>
+                <ul class="footer__menu__list">
+                    <li class="list__element">
+                        <a href="#">Presentación</a>
+                    </li>
+                    <li class="list__element">
+                        <a href="#">Conviértete en vendedor</a>
+                    </li>
+                    <li class="list__element">
+                        <a href="#">Política de privacidad</a>
+                    </li>
+                    <li class="list__element">
+                        <a href="#">Información regulatoria</a>
+                    </li>
+                </ul>
             </div>
             <div class="footer__info">
-                <h5 class="footer__title">Desarrollado con</h5>
-                <p>
-                    <img src="img/html5-badge-h-css3-graphics-multimedia-performance-semantics.png" alt="Creado con HTML y CSS">
-                </p>
-                <h5 class="footer__title">Optimizado para</h5>
-                <p class="footer__browsers">
-                    <a href="#">
-                        <img src="img/firefox-icon.png" alt="Firefox">
+                <p class="footer__title"><b>Redes sociales</b></p>
+                <p class="footer__social">
+                    <a href="https://facebook.com">
+                        <img class="info__facebook" src="./img/facebook.png" alt="Facebook">
                     </a>
-                    <a href="#">
-                        <img src="img/chrome.png" alt="Chrome">
+                    <a href="https://x.com">
+                        <img class="info__x" src="./img/x.png" alt="X">
                     </a>
-                    <a href="#">
-                        <img src="img/safari.png" alt="Safari">
+                    <a href="https://linkedin.com">
+                        <img class="info__linkedin" src="./img/linkedin.png" alt="Safari">
                     </a>
-                    <a href="#">
-                        <img src="img/android.png" alt="Android">
+                    <a href="https://youtube.com">
+                        <img class="info__youtube" src="./img/youtube.png" alt="Android">
                     </a>
-                    <a href="#">
-                        <img src="img/Opera_256x256.png" alt="Opera">
+                    <a href="https://instagram.com">
+                        <img class="info__instagram" src="./img/instagram.png" alt="Opera">
                     </a>
                 </p>
-                <h5 class="footer__title">AUTOR</h5>
-                <p>&copy; Alumn@ - WEB</p>
+            </div>
+            <div class="footer__autor">
+                <p class="autor__title">AUTOR</p>
+                <p class="autor__name">&copy; Manuel Vidal - WEB</p>
             </div>
         </div>
     </footer>
-    <!-- fin de Pié de Página -->
+    <!-- Fin de Pié de Página -->
 </body>
 </html>
