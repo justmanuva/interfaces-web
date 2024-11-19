@@ -23,4 +23,59 @@ h1 {
 .caja .info h2 {
   color: black;
   font-size: 18px;
+}
+
+/*Mixins - Funciones*/
+.caja {
+  border: 5px solid grey;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px black;
+}
+
+.caja2 {
+  border: 5px solid black;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px grey;
+}
+.caja2 h2 {
+  color: blue;
+}
+
+.alerta--exito, .alerta--peligro, .alerta {
+  border: 5px solid yellow;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px grey;
+  padding: 10px;
+  width: 75%;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 18px;
+}
+
+.alerta--peligro {
+  border: 5px solid red;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px grey;
+}
+
+.alerta--exito {
+  border: 5px solid rgb(37, 207, 37);
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px grey;
+}
+
+h4 {
+  font-size: 36px;
+}
+
+.cajas {
+  width: 900px;
+  border: 1px solid black;
+}
+
+.cajaOp {
+  float: left;
+  border: 5px solid grey;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px black;
 }/*# sourceMappingURL=estilos.css.map */
