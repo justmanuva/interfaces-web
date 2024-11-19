@@ -95,4 +95,27 @@ $wrap: 900px;
 .cajaOp {
   float: left;
   @include crearBorder5-sombra();
+  margin: 10px;
+  width: calc(($caja / $wrap) * 100%);
+}
+
+// Condicionales Sass - If
+$color-fondo: black;
+h1 {
+  @if $color-fondo == #ccc {
+    color: black;
+  } @else if $color-fondo == black {
+    color: orangered;
+  } @else {
+    color: lightsalmon;
+  }
+}
+
+// Bucles For - Each - While
+$contador: 1;
+
+@for $contador from 1 through 9 {
+  .listadoMixin ul li:nth-child(#{$contador}) {
+    font-size: $contador;
+  }
 }
