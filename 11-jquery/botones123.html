@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Botones 1 2 3</title>
+    <link rel="stylesheet" href="../10-bootstrap/Estilos/Minty/bootstrap.min.css"/>
+    <script async src="../10-bootstrap/JS/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <script>
+      $(document).ready(function () {
+        /* $("#boton1").click(function (evento) {
+          $("#salida").val($("#boton1").text());
+        });
+        $("#boton2").click(function (evento) {
+          $("#salida").val($("#boton2").text());
+        });
+        $("#boton3").click(function (evento) {
+          $("#salida").val($("#boton3").text());
+        }); */
+
+        // Mucho más rápido y eficiente
+        $("button").on("click", function () {
+          var text = $(this).text();
+          $("#salida").val(text);
+        } )
+      });
+    </script>
+
+    <div class="container">
+      <form class="form-control">
+        <input class="form-text" type="text" name="salida" id="salida"/>
+      </form>
+    </div>
+    <br />
+    <div class="container botones">
+      <button class="btn bg-secondary" id="boton1">1</button>
+      <button class="btn bg-secondary" id="boton2">2</button>
+      <button class="btn bg-secondary" id="boton3">3</button>
+    </div>
+  </body>
+</html>
