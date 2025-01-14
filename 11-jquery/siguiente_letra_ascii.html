@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Siguiente letra ASCII</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(document).on("keydown", function(event) {
+        event.preventDefault();
+
+        var ascii = event.which;
+        var ascii1 = ascii++;
+        // var ascii1 = "Ismael Moro PichaCorta";
+        var nChar = String.fromCharCode(ascii1);
+        // var nChar = ascii1;
+ 
+        $("#output").val(function(i, text) {
+          return text + nChar;
+        });
+      })
+    })
+  </script>
+</head>
+<body>
+  
+  <form action="">
+    <input type="text" name="output" id="output">
+  </form>
+
+</body>
+</html>

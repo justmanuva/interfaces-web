@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pasa el ratón</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <style>
+    #cuadro {
+      text-align: center;
+      margin: 0 auto;
+      width: 200px;
+      height: 200px;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div id="cuadro">Pasa el ratón</div>
+
+  <script>
+    $(document).ready(function() {
+      $("#cuadro").on("mouseenter", function() {
+        $(this).css("background-color", "lightgreen");
+        var ancho = $(this).width();
+        var alto = $(this).height();
+
+        $(this).css({
+          width: (width - 10) + "px",
+          height: (height - 10) + "px",
+        });
+      });
+      $("#cuadro").on("mouseleave", function() {
+        $(this).css("background-color", "");
+      });
+    })
+  </script>
+</body>
+</html>
