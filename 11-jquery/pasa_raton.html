@@ -1,39 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pasa el ratón</title>
-  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-  <style>
-    #cuadro {
-      text-align: center;
-      margin: 0 auto;
-      width: 200px;
-      height: 200px;
-      border: 1px solid black;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento Ratón</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #cuadro {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 200px;
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
-  <div id="cuadro">Pasa el ratón</div>
+    <div id="cuadro">Pasa el ratón</div>
 
-  <script>
-    $(document).ready(function() {
-      $("#cuadro").on("mouseenter", function() {
-        $(this).css("background-color", "lightgreen");
-        var ancho = $(this).width();
-        var alto = $(this).height();
-
-        $(this).css({
-          width: (width - 10) + "px",
-          height: (height - 10) + "px",
+    <script>
+        $(document).ready(function() {
+            $('#cuadro').on('mouseenter', function() {
+                $(this).css('background-color', 'lightgreen');
+            });
+            $('#cuadro').on('mouseleave', function() {
+                $(this).css('background-color', 'lightblue');
+            });
         });
-      });
-      $("#cuadro").on("mouseleave", function() {
-        $(this).css("background-color", "");
-      });
-    })
-  </script>
+    </script>
 </body>
 </html>
