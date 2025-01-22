@@ -26,12 +26,16 @@
         var alto = $(this).height();
 
         $(this).css({
-          width: (width - 10) + "px",
-          height: (height - 10) + "px",
+          width: (ancho - 10) + "px",
+          height: (alto - 10) + "px",
         });
       });
       $("#cuadro").on("mouseleave", function() {
         $(this).css("background-color", "");
+        $(this).css({
+          width: (ancho + 10) + "px",
+          height: (alto + 10) + "px",
+        });
       });
     })
   </script>
