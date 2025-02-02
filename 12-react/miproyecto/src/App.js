@@ -27,7 +27,7 @@ function App() {
 
     <div></div>
     <input ref={sumando1} type="number"/> +
-    <input ref={sumando2} type="number"/> = 
+    <input ref={sumando2} type="number"/> =
     <input value={resultado} type="text"/><br/>
     <input value="Sumar" ref={btnSumar} type="button" onClick={sumar}/>
 
