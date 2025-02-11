@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Reiniciar() {
+export default function Reiniciar({reiniciar}) {
   return (
     <div>
-        <button onclick="resetGame()">Reiniciar</button>
+        <button onClick={reiniciar}>Reiniciar</button>
     </div>
   )
 }
