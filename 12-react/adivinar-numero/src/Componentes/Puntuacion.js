@@ -4,7 +4,7 @@ import LineaPuntuacion from "./LineaPuntuacion";
 
 export default function Puntuacion() {
   return (
-    <div class="score-section">
+    <div className="score-section">
         <br/>
         <Mensaje/>
         <br/>
