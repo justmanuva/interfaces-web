@@ -1,0 +1,11 @@
+.contenedor {
+    border: 1px solid black;
+    width: 240px;
+    height: 100px;
+    color: white;
+    margin: 5px;
+}
+
+.contenedor>h3,input {
+    margin-left: 10px;
+}
